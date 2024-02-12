@@ -3,12 +3,23 @@ import './App.css'
 import { Games } from './Components/Games/Games'
 import { Header } from './Components/Header/Header'
 import { Category } from './Components/HeaderParcourir/Category'
-
+import { useEffect } from 'react'
 import { SideBar } from './Components/SideBar/Sidebar'
+import { useWindowSize } from './hooks/useScreenSize'
+import { Mobile } from './Components/MobilePage/Mobile'
+
+
 
 
 
 function App() {
+  const screenWidth = useWindowSize().width;
+  
+
+
+  if (screenWidth <= 500) {
+    return <Mobile/>
+  }
 
 
   return (
