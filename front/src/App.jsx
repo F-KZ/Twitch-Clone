@@ -17,6 +17,7 @@ function App() {
 
 
   if (screenWidth <= 500) {
+    console.log('mobile mode');
     return <Mobile/>
   }
 
