@@ -4,7 +4,7 @@ export let apiTwitch =
     axios.create({
       headers : {
         'Client-ID' : `vsr11pna78ii6rgag9h1ctb7hf7led`,
-        'Authorization': 'Bearer rto5b02w7ruokhb69feat2ub44i8an',
+        'Authorization': 'Bearer qnxj308q34yitfsc8f9n514rqqyu2r',
       }
     }) 
   
